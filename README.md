@@ -43,5 +43,3 @@ Throughout the program, I am working on real-time assignments, hands-on coding t
 
 ---
 
-## 📂 Repository Structure  
-
