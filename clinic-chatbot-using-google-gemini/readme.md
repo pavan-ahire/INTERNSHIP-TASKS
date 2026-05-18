@@ -1,70 +1,90 @@
-# 💊 PharmaGen AI — Pharmaceutical Industry Assistant
+# 🧬 PharmaGen AI — Intelligent Pharmaceutical Chat Assistant
 
-PharmaGen AI is a **production-ready Generative AI chatbot** designed to assist with pharmaceutical industry queries. It leverages advanced LLM capabilities to provide intelligent, context-aware responses with memory support.
-
----
-
-## 🚀 Features
-
-* 💬 Conversational AI chatbot using LLM (Gemini)
-* 🧠 Memory-enabled chat (context-aware responses)
-* 🏥 Specialized for pharmaceutical domain queries
-* ⚡ Fast and interactive UI using Streamlit
-* 🔄 Session-based conversation tracking
-* 🧹 Clear conversation functionality
-* 📦 Modular and scalable architecture
+PharmaGen AI is an advanced **Generative AI-powered pharmaceutical assistant** built to provide accurate, context-aware, and intelligent responses for pharmaceutical industry-related queries.  
+Powered by **Google Gemini LLM** and developed with **Streamlit**, the system supports conversational memory, modular architecture, and real-time AI interaction.
 
 ---
 
-## 🛠️ Tech Stack
+# 🚀 Key Features
 
-* **Frontend/UI:** Streamlit
-* **LLM:** Google Gemini API
-* **Backend Logic:** Python
-* **State Management:** Streamlit Session State
-* **Architecture:** Modular (Client, Memory, Prompt Builder)
+- 💬 AI-powered pharmaceutical chatbot
+- 🧠 Context-aware conversations with memory support
+- 🏥 Specialized for pharmaceutical and healthcare domain queries
+- ⚡ Fast and interactive Streamlit-based interface
+- 🔄 Session-based chat history management
+- 🧹 One-click conversation reset functionality
+- 📦 Scalable and modular code architecture
+- 🤖 Real-time response generation using Gemini API
 
 ---
 
-## 📂 Project Structure
+# 🛠️ Tech Stack
 
-```
+| Category | Technology |
+|----------|-------------|
+| Frontend | Streamlit |
+| Backend | Python |
+| LLM | Google Gemini API |
+| Memory Handling | Streamlit Session State |
+| Prompt Engineering | Custom Prompt Builder |
+| Architecture | Modular AI System |
+
+---
+
+# 📁 Project Structure
+
+```bash
 pharmagen-ai/
 │
-├── app.py                     # Main Streamlit app
-├── chatbot/
-│   ├── gemini_client.py      # Handles Gemini API calls
-│   ├── memory_manager.py     # Manages conversation memory
-│   ├── prompt_builder.py     # Builds structured prompts
+├── app.py
 │
-├── .env                      # API keys (not included in repo)
+├── chatbot/
+│   ├── gemini_client.py
+│   ├── memory_manager.py
+│   ├── prompt_builder.py
+│
 ├── requirements.txt
-└── README.md
+├── README.md
+└── .env
 ```
 
 ---
 
-## ⚙️ Setup Instructions
+# ⚙️ Installation & Setup
 
-### 1️⃣ Clone the Repository
+## 1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/your-username/pharmagen-ai.git
+
 cd pharmagen-ai
 ```
 
 ---
 
-### 2️⃣ Create Virtual Environment
+## 2️⃣ Create Virtual Environment
 
 ```bash
-python -m venv myenv
-myenv\Scripts\activate     # Windows
+python -m venv venv
+```
+
+### Activate Environment
+
+#### Windows
+
+```bash
+venv\Scripts\activate
+```
+
+#### Linux / Mac
+
+```bash
+source venv/bin/activate
 ```
 
 ---
 
-### 3️⃣ Install Dependencies
+## 3️⃣ Install Required Packages
 
 ```bash
 pip install -r requirements.txt
@@ -72,9 +92,9 @@ pip install -r requirements.txt
 
 ---
 
-### 4️⃣ Set Environment Variables
+## 4️⃣ Configure Environment Variables
 
-Create a `.env` file and add:
+Create a `.env` file and add your Gemini API key:
 
 ```env
 GEMINI_API_KEY=your_api_key_here
@@ -82,7 +102,7 @@ GEMINI_API_KEY=your_api_key_here
 
 ---
 
-### 5️⃣ Run the Application
+## 5️⃣ Launch the Application
 
 ```bash
 streamlit run app.py
@@ -90,70 +110,110 @@ streamlit run app.py
 
 ---
 
-## 🧠 How It Works
+# 🧠 How PharmaGen AI Works
 
-1. User enters a pharmaceutical query
-2. Input is stored in memory
-3. Prompt is generated using `prompt_builder`
-4. Gemini API generates a response
-5. Response is stored and displayed
-6. Context is maintained across conversation
-
----
-
-## 💡 Example Use Cases
-
-* Drug information queries
-* Pharmaceutical regulations
-* Clinical research insights
-* Industry trends
-* Manufacturing processes
+```text
+User Query
+     ↓
+Memory Storage
+     ↓
+Prompt Builder
+     ↓
+Gemini API Processing
+     ↓
+AI Response Generation
+     ↓
+Response Saved in Memory
+```
 
 ---
 
-## 🔒 Environment Variables
+# 🔥 Core Functionalities
 
-| Variable       | Description               |
-| -------------- | ------------------------- |
-| GEMINI_API_KEY | API key for Google Gemini |
-
----
-
-## 🧪 Future Improvements
-
-* 🌐 Multi-language support
-* 📊 Analytics dashboard
-* 🧾 Export chat history
-* 🔐 Authentication system
-* ☁️ Cloud deployment (Streamlit Cloud / AWS)
+## 💬 Conversational AI
+Users can interact naturally with the chatbot for pharmaceutical-related discussions and information retrieval.
 
 ---
 
-## 📸 UI Preview
-
-Simple and clean chat-based interface powered by Streamlit.
-
----
-
-## 👨‍💻 Author
-
-**Mahesh Bodhankar**
-Aspiring Data Analyst & GenAI Developer
+## 🧠 Memory-Enabled Responses
+The chatbot maintains session memory to generate context-aware and more human-like conversations.
 
 ---
 
-## ⭐ Acknowledgements
-
-* Streamlit
-* Google Gemini API
-* Open-source Python ecosystem
-
----
-
-## 📌 License
-
-This project is for educational and portfolio purposes.
+## 🏥 Pharmaceutical Knowledge Assistance
+Designed specifically for:
+- Drug-related queries
+- Manufacturing insights
+- Pharma workflows
+- Regulatory discussions
+- Clinical research information
 
 ---
 
-> 🚀 Built as a real-world GenAI project to demonstrate LLM integration, memory handling, and modular AI system design.
+# 💡 Example Use Cases
+
+- 📌 Drug composition and usage information
+- 📌 Pharmaceutical manufacturing processes
+- 📌 Clinical trial discussions
+- 📌 Industry trend analysis
+- 📌 Regulatory guidance assistance
+
+---
+
+# 🔐 Environment Variables
+
+| Variable Name | Description |
+|----------------|-------------|
+| `GEMINI_API_KEY` | API key for accessing Google Gemini models |
+
+---
+
+# ⚠️ Current Limitations
+
+- Responses depend on LLM-generated outputs
+- Internet/API availability required
+- Session memory resets after app restart
+
+---
+
+# 🚀 Future Enhancements
+
+- 🌐 Multi-language pharmaceutical assistant
+- 📊 Dashboard for analytics & insights
+- 🧾 Export chat history as PDF/DOCX
+- 🔐 User authentication system
+- ☁️ Cloud deployment support
+- 🧠 Persistent long-term memory integration
+
+---
+
+# 📸 User Interface
+
+Clean and modern chatbot interface built using Streamlit for seamless user interaction.
+
+---
+
+# 👨‍💻 Developed By
+
+## **Pavan Ahire**
+AI/ML & Generative AI Developer
+
+---
+
+# 🙌 Acknowledgements
+
+Special thanks to:
+
+- Streamlit
+- Google Gemini API
+- Python Open-Source Community
+
+---
+
+# 📜 License
+
+This project is created for educational, learning, and portfolio purposes.
+
+---
+
+> 🚀 A real-world Generative AI application demonstrating LLM integration, conversational memory, prompt engineering, and modular AI system architecture.
