@@ -1,0 +1,21 @@
+# ============================================================
+# FILE: requirements.txt
+# PURPOSE: Lists all Python packages this project needs.
+#          Run: pip install -r requirements.txt
+#          This installs everything in one command.
+# ============================================================
+
+# streamlit — turns Python into a web app with zero HTML/CSS
+streamlit==1.32.0
+
+# boto3 — official AWS SDK for Python
+# "SDK" = Software Development Kit = a library to talk to AWS services
+# boto3 lets you call S3, Bedrock, EC2, IAM etc from Python code
+boto3==1.34.0
+
+# python-dotenv — reads your .env file and loads secrets
+# into environment variables so your code can use them
+python-dotenv==1.0.0
+
+# botocore — low-level AWS library (boto3 depends on this)
+botocore==1.34.0
