@@ -1,0 +1,43 @@
+# Core UI
+streamlit==1.54.0
+
+# Google Gemini + APIs
+google-ai-generativelanguage==0.6.15
+google-api-core>=2.17,<3.0
+google-api-python-client==2.190.0
+google-auth==2.48.0
+google-auth-httplib2==0.3.0
+google-genai==1.64.0
+googleapis-common-protos>=1.72.0
+protobuf>=3.20.2,<5.0.0
+
+# HTTP / Networking
+httpx==0.28.1
+requests==2.32.5
+
+# Data handling
+numpy==1.26.4
+pandas==2.2.2
+pyarrow==15.0.2
+
+# Validation / schema
+pydantic==2.12.5
+
+# Utilities
+python-dotenv==1.2.1
+tqdm==4.67.3
+tenacity==9.1.4
+
+# Streamlit dependencies (keep minimal, avoid over-pinning)
+altair>=5.0.0
+blinker>=1.9.0
+cachetools>=6.0.0
+click>=8.0.0
+packaging>=23.0
+pillow>=10.0.0
+pydeck>=0.9.0
+tornado>=6.3.0
+watchdog>=3.0.0
+
+# Optional but commonly required
+typing-extensions>=4.10.0
